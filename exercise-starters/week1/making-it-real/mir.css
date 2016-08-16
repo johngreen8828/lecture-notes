@@ -1,0 +1,216 @@
+body{
+    background-color: gray;
+}
+#page {
+    position: relative;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    postion: relative;
+    background-color: lightgray;
+}
+#right-box {
+    position: absolute;
+}
+/********Header Section********/
+header {
+    background-color: #2ecc71;
+    height: 250px;
+    border-bottom: 5px solid #27ae60;
+}
+.first-h1 {
+   padding-top: 200px;
+   padding-left: 10px;
+   color: white;    
+}
+/********Navigation Section*********/
+.main-nav {
+    background-color: #2c3e50;
+    text-align: right;
+}
+.main-nav ul {
+    border-top: 1px solid #34495e;
+    border-bottom: 5px solid #34495e;
+    margin-top: 0;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.main-nav li {
+    display: inline-block;
+    
+} 
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: small
+}
+/**********Content Section overall layout**********/
+h3 {
+    padding-left: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+}
+.section1 h3 {
+    border: none;
+}
+
+article p {
+    padding-left: 25px;
+    padding-right: 20px;
+}
+
+/**********Table Properties*************/
+table {
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px solid gray;
+}
+.col1, .col2, .col3 {
+    background-color: lightgray;
+    padding: 5px;
+}
+.col2 {
+    text-align: left;
+    padding-left: 10px;
+}
+.go, .try, .view {
+    color: white;
+    width: 20%;
+    background-color: white;
+    padding-left: 10px;
+}
+.bl-div {
+    background-color: #3498db;
+    text-align: center;
+    height: 30px;
+    width: 70px;
+    padding-top: 10px;
+    font-size: small;
+}
+.code {
+    text-align: center;
+    width: 15%;
+}
+.js-box {
+    background-color: lightgray;
+    height: 80px;
+    padding-left: 20px;
+}
+.js-box :first-child{
+    padding-top: 13px;
+    padding-left: 0px;
+    padding-right: 0;
+    margin: 0;
+}
+.js-box p{
+    margin:0;
+}
+.mvo {
+    padding: 0;
+}
+.section4 ol{
+    padding-left: 20px;
+}
+.user-input-comment-section h3 {
+    border: none;
+}
+.user-info{
+    position: relative;
+    height:1px;
+    width: 100%;
+    border-bottom: 2px solid gray;
+
+}
+.user-info div{
+    position: absolute;
+    top: -6px;
+    left: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: gray;
+    background-color: lightgray;
+}
+.comment-outer{
+    position: relative;
+    padding-left: 200px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.comment-outer .c1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: right;
+    width: 160px;
+    line-height: 25px;
+}
+.comment-outer .c2{
+    width: 100%;
+    box-sizing: border-box;
+    height: 20px;
+}
+.cs-p{
+    margin-bottom: 40px;
+}
+.cs-d{
+    margin-bottom: 70px;
+}
+.input{
+    box-sizing: border-box;
+    height: 150px;
+    width: 100%;
+    border: 1px solid black;
+    margin-top:40px;
+}
+.submit{
+    box-sizing: border-box;
+    color: white;
+    background-color: #c0392b;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+.submit p{
+    padding-top: 8px;
+}
+.nc-outer ul{
+    list-style: none;
+}
+.nc-outer ul ul{
+    border-left: 1px solid lightgray;
+}
+
+.nc-outer ul img{
+    float: left;
+    margin-right: 20px;
+}
+.nc-outer:after{
+    width: 100%;
+    clear: both;
+}
+.user :first-child{
+    padding-top: 4px;
+    padding-bottom:4px;
+    font-weight: bold;
+}
+.user :last-child{
+    font-style: italic;
+    font-size: small;
+}
+.right-box{
+    height: 150px;
+    width: 200px;
+    background-color: lightgray;
+    position: absolute;
+    top: 300px;
+    right: -220px;
+    font-size: small;
+}
+.right-box ul{
+    list-style: none;
+    padding-left: 20px;
+}
