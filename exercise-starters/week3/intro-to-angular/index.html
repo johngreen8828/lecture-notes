@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Intro to angular</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <body ng-controller="mainCtrl as v">
+        <h1 ng-show="showHello" type="text">Hello!</h1>
+        <button ng-click="v.helloWorld()">HelloWorld</button>
+        <!--Hide and show h1 element by setting variable showHello in button to toggle true
+         or false when the button is pressed.-->
+        <button ng-click="showHello = !showHello">Hide and show Hello</button>
+        <button ng-click="showList = !showList">Hide and show List items</button>
+        <ul ng-show="showList">
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+        </ul>
+        <p style="{{v.textColor}}" ng-mouseover="v.changeColor(true)" ng-mouseout="v.changeColor(false)">This paragraph will turn pink when moused over.</p>
+        <h1 ng-mouseover="v.addXPoint()">The exclamation point goes on the end{{v.xPoint}}</h1>
+        <a ng-click="v.goToLink($event)" ng-href="{{v.link}}">Google</a>
+        <a ng-click="v.goToLink2($event)" ng-href="{{v.link}}" ng-hide="v.hideLink">Google</a>
+       <h3 ng-style="v.buttonStyles" ng-click="v.showPopUp()">Click for PopUp</h3>
+        <div ng-style="v.popUpStyles" ng-show="v.showHide">
+            <h2 ng-style="v.parStyles" >This is a pop-up that you can click 'close' to get out.</h2>
+            <h2 ng-style="v.h2Styles" ng-click=v.closePopUp() >Close</h2>
+        </div>
+    </body>
+</head>
+</html>

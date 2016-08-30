@@ -1,0 +1,11 @@
+<div class="wrapper"><img class="image" ng-src="{{card.art}}">
+    <form ng-submit="addCardCtrl ()">
+        <h1>Create a magic card!</h1>
+        <hr>
+        <input type="text" placeholder="Name" ng-model="Gcards.newCard.name" />
+        <input type="text" placeholder="Mana Color" ng-model="Gcards.newCard.manaColor" />
+        <input type="text" placeholder="Power" ng-model="Gcards.newCard.power" />
+        <input type="text" placeholder="Toughness" ng-model="Gcards.newCard.toughness" />
+        <button type="submit">Shazaam!!!</button>
+    </form>
+</div>

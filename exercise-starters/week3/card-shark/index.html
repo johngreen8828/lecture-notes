@@ -1,0 +1,40 @@
+<!DOCTYPE>
+<html ng-app="MagicCards">
+<!-- multiple ng-apps -->
+
+<head>
+    <title> The Store of Magic</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+    <!-- missing -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="main.js"></script>
+    <script src="router.js"></script> 
+    <link href="main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <section  ng-controller="GatherCards as Gcards">
+        <div class=" body" ng-repeat="card in Gcards.cards">
+            <h4> {{card.name}} </h4>
+            <div class="wrapper"><img class="image" ng-src="{{card.art}}"> </div>
+            <ul>
+                <li> Mana Color: {{card.manaColor}}</li>
+                <li>Power:{{card.power}}</li>
+                <li>Toughness:{{card.toughness}}</li>
+            </ul>
+        </div>
+    </section>
+    <hr>
+    <section>
+        <ng-view>
+            <!--This is where our templates will be placed-->
+        </ng-view>
+    </section>
+
+
+</body>
+
+</html>

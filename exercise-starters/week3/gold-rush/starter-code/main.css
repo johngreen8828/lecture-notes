@@ -1,0 +1,17 @@
+img {
+    width: 100%;
+}
+.marker {
+    width: 20px;
+    height: 20px;
+    background-image: url("http://orig04.deviantart.net/1c17/f/2010/148/3/a/20x20_png_icons_domo_2_by_jmcivor.png");
+    position: absolute;
+}
+
+#markers {
+    position: relative;
+}
+
+#map {
+    width: 1600px;
+}

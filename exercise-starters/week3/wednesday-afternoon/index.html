@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="tokyo">
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <script src="main.js"></script>
+    <style> 
+        .monster{
+        border: 1px solid black;
+        width: 80px;
+        height 120px;
+        background-color: gold;
+        padding: 10ps;
+        width: 120px;
+        box-sizing: borderbox;
+    } 
+    </style>
+</head>
+
+<body ng-controller="abyss as aCtrl">
+    <form ng-submit="aCtrl.addMonster()">
+        <h1>Create a Monster</h1>
+        <hr>
+        <input type="text" placeholder="Monster Name" ng-model="aCtrl.newMonster.name"/>
+        <input type="text" placeholder="Abilities" ng-model="aCtrl.newMonster.abilities" ng-list/>
+        <button>Attack Tokyo!</button>
+        <label>{{aCtrl.monsters}}</label>
+    </form> 
+    <section id="monsters">
+        <div class="monster" ng-repeat="monster in aCtrl.monsters">
+             <h3>{{aCtrl.monsters.name}}</h3>
+            <ul ng-repeat="ability in monster.abilities">
+               
+                <li>{{ability}}</li>
+            </ul>
+
+ 
+        </div>
+
+
+
+    </section>
+
+
+
+</body>
+
+
+</html>
