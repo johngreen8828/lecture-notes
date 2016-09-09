@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app='DGApp'>
+<head>
+    <title>Dungeon Crawler</title>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body id="room">
+<section ng-controller="GoldRushMarkers as goldMarkers">
+<div id="items">
+                <p
+                    class="item"
+                    ng-repeat="goldFound in goldMarkers.markers"
+                    ng-style="goldFound.styles"
+                    title="{{goldFound.description}}"
+                    ng-click="goldMarkers.removeMarker($event, $index)" 
+                >
+                
+                </p>
+                <div id="map" ng-click="goldMarkers.addMarker($event)">
+                 <img src="topo-co.jpg">
+            </div>
+</section>
+
+
+
+
+</body>
+</html>

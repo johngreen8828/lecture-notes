@@ -14,7 +14,7 @@ angular.module('app', [])
                 v.textColor = "color: pink";
             } else if (pink === false) {
                 v.textColor = "color: black";
-            }
+            } 
         };
         v.addXPoint = function () {
             v.xPoint = "!";

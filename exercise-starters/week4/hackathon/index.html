@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html ng-app="Hacker">
+    <head>
+        <script src ="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+        <script src ="main.js"></script>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body ng-controller="APIHack as hCtrl">
+        <button ng-click="hCtrl.getMarvel()">Press for FU data</button>
+        <br>
+        <br>
+        <button ng-click="hCtrl.getMarvel1()">Press for Dylan data"</button>
+        <br>
+        <br>
+        <button ng-click="hCtrl.getMarvel2()">Press for Joshua data"</button>
+        <br>
+        <br>
+        <button ng-click="hCtrl.getMarvel3()">Press for Thank You data"</button>
+            <h1 class="marquee">{{hCtrl.charList.message}} {{hCtrl.charList.subtitle}}</h1>
+    </body>
+</html>
