@@ -47,6 +47,7 @@ angular.module('myApp',
 			modalCtrl.editing = true;
 			modalCtrl.canData = Data;
 			//var goTo = confirm(modalCtrl.canData);
+			console.log("tips: " + modalCtrl.canData.tips);
 
 			//Open Modal Window
 			document.getElementById("modalBox").style.zIndex = "3";
@@ -77,7 +78,6 @@ angular.module('myApp',
 					modalCtrl.editing = false;
 					modalCtrl.activeSnap.imgComments = modalCtrl.canData.tips;
 					modalCtrl.canData.tips = "";
-					
 					modalCtrl.activeSnap = {};
 				} else {
 				
@@ -100,6 +100,12 @@ angular.module('myApp',
 			modalCtrl.Close = function () {
 				modalCtrl.editing = false;
 
+			}
+
+			modalCtrl.removeItem = function($index){
+				modalCtrl.canData.splice($index,1);
+				modalCtrl.activeSnap = {};
+				modalCtrl.canData.tips = "";
 			}
 
 
@@ -126,13 +132,7 @@ angular.module('myApp',
 function DataFactory() {
 
 	var canvasData = [
-		/*{
-			imgGName: "",
-			imgGEmail: "",	
-            imgData : "",
-            imgTimeStamp : "",
-			imgComments: ""
-		}*/
+		
 	]
 	return canvasData;
 }

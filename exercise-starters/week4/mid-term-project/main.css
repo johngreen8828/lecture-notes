@@ -204,7 +204,7 @@ a:active {
 #screenSavesContext{
   position: relative;
   min-height:200;
-  border: 5px solid red;    
+  /*border: 5px solid red;    */
 }
 .makeLeft{
   text-align: left;

@@ -20,7 +20,7 @@
     <p class="intro">
       Greengo Golf allows you to upload your golf swing video for others to give you pointers on how to improve your golf swing.
     </p>
-    <a class="callout" href="#more">Find out more</a>
+    <a class="callout" href="/johnGreen.jpg">Find out more</a>
     <div ng-controller="HomeCtrl as controller" class="videogular-container">
       <videogular vg-theme="controller.config.theme">
         <vg-media vg-src="controller.config.sources" vg-tracks="controller.config.tracks">
@@ -59,7 +59,8 @@
         <h3>{{modalCtrl.canData[0].imgGName}}</h3>
         <ul class="makeLeft">
           <li ng-repeat="imageData in modalCtrl.canData" style="list-style:none" class="imgContainer"> {{$index}}
-            <img  ng-src="{{imageData.imgData}}" ng-click="modalCtrl.loadSnapshot($index, imageData, imageData.imgComments, $event)" class="snapshot">
+            <img  ng-src="{{imageData.imgData}}" ng-click="modalCtrl.loadSnapshot($index, imageData, imageData.imgComments, $event)" 
+            ng-Dblclick="modalCtrl.removeItem($index)"  class="snapshot">
           </li>
         </ul>
       </div>
