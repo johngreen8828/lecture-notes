@@ -22,8 +22,8 @@ angular.module('myApp',[])
 			//console.log("tips: " + modalCtrl.canData.tips);
 			//load video into modal window
 
-			//var h = modalCtrl.vid.videoHeight * 0.25
-			//var w = modalCtrl.vid.videoWwidth * 0.25
+			var h = modalCtrl.vid.videoHeight * 0.25
+			var w = modalCtrl.vid.videoWwidth * 0.25
 			console.log(vid, h, w);
 			modalCtrl.vid.pause();
 			var canvas = document.getElementById('canvas');
