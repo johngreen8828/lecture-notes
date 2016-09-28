@@ -1,0 +1,20 @@
+<DOCTYYPE html>
+    <html ng-app='countryApp'>
+    <head>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+        <script src="/CountriesController.js"></script>
+    </head>
+    <body ng-controller="countryController as vm">
+       <button ng-click="country()">Add Countries</button> 
+
+       <h2 ng-repeat="countryName in vm.country">{{countryName}}</h2>
+
+       <form ng-submit="vm.SearchCountry()">
+           <input type="text" placeholder="Search for country" ng-model="vm.Search">
+           <input type="submit">
+
+
+       </form>
+    </body> 
+
+    </html>

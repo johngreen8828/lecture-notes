@@ -10,19 +10,19 @@ var http = require('http');
 var path = require('path');
 var socketio = require('socket.io')
 var app = express();
-
+console.log(routes);
 // all environments
 app.set('port', process.env.PORT || 3000);
-app.use(express.logger('dev'));
-app.use(express.bodyParser());
-app.use(express.methodOverride());
-app.use(app.router);
+// app.use(express.logger('dev'));
+// app.use(express.bodyParser());
+// app.use(express.methodOverride());
+// app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
-if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
-}
+// if ('development' == app.get('env')) {
+//   app.use(express.errorHandler());
+// }
 
 //index route
 app.get('/', routes.index);

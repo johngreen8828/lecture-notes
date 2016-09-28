@@ -1,0 +1,29 @@
+{
+  "travels": [
+    {
+      "id": 1,
+      "name": "CanaryIslands"
+    },
+    {
+      "id": 2,
+      "name": "CapeVerde"
+    },
+
+    {
+      "id": 3,
+      "name": "Guam"
+    },
+    {
+      "id": 4,
+      "name": "Phillipines"
+    },
+    {
+      "id": 5,
+      "name": "Seville"
+    },
+    {
+      "id": 6,
+      "name": "StraitofMagellan"
+    }
+  ]
+}
