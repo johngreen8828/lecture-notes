@@ -3,6 +3,7 @@ var express     = require('express'),
     morgan      = require('morgan'),
     mongoose    = require('mongoose'),
     fileServer  = express.static('public'),
+    routes      = require('routes/index.js') //major traffic cop
 
     PORT = process.env.PORT || 3000; 
 
@@ -15,13 +16,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan('common'));
 app.use(fileServer);
 
-app.get('', (req, res) => {
-    console.log('Get Server');
-});
 
-app.post('', (req, res)=> {
-    console.log('Post Server');
-});
+
+routes(app);
 
 app.listen(PORT, () => {
     console.log('Server listening on ' + PORT)
