@@ -1,0 +1,31 @@
+.bodyWrapper {
+    background-color: lightsalmon;
+}
+.loginWrapper {
+    background-color: lightsalmon;
+}
+.loginBox {
+    text-align: center;
+}
+.loginButton {
+    color: white;
+    background-color: dodgerblue;
+    text-decoration: none;
+    border-radius: 5%;
+}
+.buttonDown {
+    margin-top: 50px;
+}
+.loginText{
+    text-align: center;
+}
+.picWrapper{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.picSize{
+    height: 300px;
+    width: 450px;
+    border-radius: 10%;
+}
